@@ -1,20 +1,46 @@
-import * as Creature from '../Creature';
+import {
+    Alignment,
+    AlignmentDescriptor,
+    Size,
+    Skill,
+    StatKey,
+    StatGroup,
+    Aura,
+    ClassTier,
+    FeatFlag,
+} from '../Creature';
 import { testStringEnum, testNumericEnum } from './helpers';
 
 describe('Creature-related enums', () => {
     it('Alignment should be a string-based enum', () => {
-        testStringEnum(Creature.Alignment);
+        testStringEnum(Alignment);
     });
     it('AlignmentDescriptor should be a string-based enum', () => {
-        testStringEnum(Creature.AlignmentDescriptor);
+        testStringEnum(AlignmentDescriptor);
     });
     it('Size should be a numeric enum', () => {
-        testNumericEnum(Creature.Size);
+        testNumericEnum(Size);
     });
     it('Skill should be a string-based enum', () => {
-        testStringEnum(Creature.Skill);
+        testStringEnum(Skill);
     });
     it('StatKey should be a string-based enum', () => {
-        testStringEnum(Creature.StatKey);
+        testStringEnum(StatKey);
+    });
+    it('StatGroup should be a string-based enum', () => {
+        testStringEnum(StatGroup);
+    });
+    describe('Class-related enums', () => {
+        it('Aura should be a string-based enum', () => {
+            testStringEnum(Aura);
+        });
+        it('ClassTier should be a string-based enum', () => {
+            testStringEnum(ClassTier);
+        });
+    });
+    describe('Feat-related enums', () => {
+        it('FeatFlag should be a string-based enum', () => {
+            testStringEnum(FeatFlag);
+        });
     });
 });

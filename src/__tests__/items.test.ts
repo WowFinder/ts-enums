@@ -1,45 +1,58 @@
-import * as Items from '../Item';
+import {
+    ArmorBonusType,
+    ArmorFlags,
+    ArmorType,
+    ExoticWeaponProficiency,
+    GearSlot,
+    MartialWeaponProficiency,
+    Rarity,
+    SimpleWeaponProficiency,
+    WeaponFlags,
+    WeaponGroup,
+    WeaponProficiency,
+    WeaponRank,
+} from 'Item';
 import { testStringEnum } from './helpers';
 
 describe('Item-related enums', () => {
     it('Rarity should be a string-based enum', () => {
-        testStringEnum(Items.Rarity);
+        testStringEnum(Rarity);
     });
     it('GearSlot should be a string-based enum', () => {
-        testStringEnum(Items.GearSlot);
+        testStringEnum(GearSlot);
     });
     describe('Armor-related enums', () => {
         it('ArmorBonusType should be a string-based enum', () => {
-            testStringEnum(Items.ArmorBonusType);
+            testStringEnum(ArmorBonusType);
         });
         it('ArmorFlags should be a string-based enum', () => {
-            testStringEnum(Items.ArmorFlags);
+            testStringEnum(ArmorFlags);
         });
         it('ArmorType should be a string-based enum', () => {
-            testStringEnum(Items.ArmorType);
+            testStringEnum(ArmorType);
         });
     });
     describe('Weapon-related enums', () => {
         it('SimpleWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(Items.SimpleWeaponProficiency);
+            testStringEnum(SimpleWeaponProficiency);
         });
         it('MartialWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(Items.MartialWeaponProficiency);
+            testStringEnum(MartialWeaponProficiency);
         });
         it('ExoticWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(Items.ExoticWeaponProficiency);
+            testStringEnum(ExoticWeaponProficiency);
         });
         it('WeaponProficiency should be a string-based enum', () => {
-            testStringEnum(Items.WeaponProficiency);
+            testStringEnum(WeaponProficiency);
         });
         it('WeaponFlags should be a string-based enum', () => {
-            testStringEnum(Items.WeaponFlags);
+            testStringEnum(WeaponFlags);
         });
         it('WeaponGroup should be a string-based enum', () => {
-            testStringEnum(Items.WeaponGroup);
+            testStringEnum(WeaponGroup);
         });
         it('WeaponRank should be a string-based enum', () => {
-            testStringEnum(Items.WeaponRank);
+            testStringEnum(WeaponRank);
         });
     });
 });

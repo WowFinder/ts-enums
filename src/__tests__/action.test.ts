@@ -1,10 +1,10 @@
-import * as Action from '../Action';
+import { FlyManeuverability, ActionLength } from '../Action';
 import { testStringEnum } from './helpers';
 describe('Action-related enums', () => {
     it('FlyManeuverability should be a string-based enum', () => {
-        testStringEnum(Action.FlyManeuverability);
+        testStringEnum(FlyManeuverability);
     });
     it('ActionLength should be a string-based enum', () => {
-        testStringEnum(Action.ActionLength);
+        testStringEnum(ActionLength);
     });
 });

@@ -1,22 +1,11 @@
-import * as Enums from '../index';
+import { Languages, Reputation } from '../index';
 import { testStringEnum } from './helpers';
 
 describe('Global enums', () => {
     it('Languages should be a string-based enum', () => {
-        testStringEnum(Enums.Languages);
+        testStringEnum(Languages);
     });
-    describe('Damage-related enums', () => {
-        it('PhysicalDamageType should be a string-based enum', () => {
-            testStringEnum(Enums.PhysicalDamageType);
-        });
-        it('EnergyType should be a string-based enum', () => {
-            testStringEnum(Enums.EnergyType);
-        });
-        it('SpecialDamageType should be a string-based enum', () => {
-            testStringEnum(Enums.SpecialDamageType);
-        });
-        it('DamageType should be a string-based enum', () => {
-            testStringEnum(Enums.DamageType);
-        });
+    it('Reputation should be a string-based enum', () => {
+        testStringEnum(Reputation);
     });
 });
