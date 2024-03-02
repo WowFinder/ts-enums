@@ -4,9 +4,9 @@ TS-based enumerations used accross the WowFinder apps and libraries.
 
 ## Repository status
 
--   **Read / fetch**: 
--   **Write / push**: 
--   **Development**: 
+-   **Read / fetch**: Ready ✅
+-   **Write / push**: Ready ✅
+-   **Development**: Ready ✅
 
 ### Sonar public analysis
 
