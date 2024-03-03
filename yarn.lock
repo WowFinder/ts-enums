@@ -1252,6 +1252,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wowfinder/ts-enums@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@wowfinder/ts-enums@workspace:."
+  dependencies:
+    "@tsconfig/recommended": "npm:^1.0.3"
+    "@types/jest": "npm:^29.5.12"
+    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
+    "@typescript-eslint/parser": "npm:^7.0.2"
+    eslint: "npm:^8.57.0"
+    eslint-config-prettier: "npm:^9.1.0"
+    eslint-config-standard: "npm:^17.1.0"
+    eslint-plugin-deprecation: "npm:^2.0.0"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-n: "npm:^16.6.2"
+    eslint-plugin-node: "npm:^11.1.0"
+    eslint-plugin-prettier: "npm:^5.1.3"
+    eslint-plugin-promise: "npm:^6.1.1"
+    jest: "npm:^29.7.0"
+    npm-run-all: "npm:^4.1.5"
+    prettier: "npm:^3.2.5"
+    rimraf: "npm:^5.0.5"
+    rxjs: "npm:^7.8.1"
+    ts-jest: "npm:^29.1.2"
+    tsd: "npm:^0.30.7"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "abbrev@npm:^2.0.0":
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
@@ -5702,34 +5730,6 @@ __metadata:
   checksum: 10c0/8ddb493e7ae581d3f57a2e469142feb60b420d4ad8366ab969fe8e36531f8f301f370676b47e8d97f28b5f5fd10d6f2d55f656943a8546ef95e35ce5cf117754
   languageName: node
   linkType: hard
-
-"ts-enums@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "ts-enums@workspace:."
-  dependencies:
-    "@tsconfig/recommended": "npm:^1.0.3"
-    "@types/jest": "npm:^29.5.12"
-    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
-    "@typescript-eslint/parser": "npm:^7.0.2"
-    eslint: "npm:^8.57.0"
-    eslint-config-prettier: "npm:^9.1.0"
-    eslint-config-standard: "npm:^17.1.0"
-    eslint-plugin-deprecation: "npm:^2.0.0"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-n: "npm:^16.6.2"
-    eslint-plugin-node: "npm:^11.1.0"
-    eslint-plugin-prettier: "npm:^5.1.3"
-    eslint-plugin-promise: "npm:^6.1.1"
-    jest: "npm:^29.7.0"
-    npm-run-all: "npm:^4.1.5"
-    prettier: "npm:^3.2.5"
-    rimraf: "npm:^5.0.5"
-    rxjs: "npm:^7.8.1"
-    ts-jest: "npm:^29.1.2"
-    tsd: "npm:^0.30.7"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "ts-jest@npm:^29.1.2":
   version: 29.1.2
