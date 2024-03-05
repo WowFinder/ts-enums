@@ -25,20 +25,41 @@ const DamageType = {
 type DamageType = PhysicalDamageType | EnergyType | SpecialDamageType;
 
 enum SpecialDamageModifier {
-    SpellPower = 'SpellPower',
-    Finesse = 'Finesse',
+    spellPower = 'spellPower',
+    finesse = 'finesse',
+}
+
+enum DamageModifier {
+    none = 'none',
+    meleeSingle = 'meleeSingle',
+    meleeTwoHanded = 'meleeTwoHanded',
+    meleeOffhand = 'meleeOffhand',
+    rangedComposite = 'rangedComposite',
+    spellAbility = 'spellAbility',
+    spellPower = 'spellPower',
+    finesse = 'finesse',
 }
 
 enum SpecialDamageRollMultiplier {
-    CasterLevel = 'CasterLevel',
-    TotalLevel = 'TotalLevel',
+    casterLevel = 'casterLevel',
+    totalLevel = 'totalLevel',
+}
+
+enum DamageRollMultiplier {
+    single = 'single',
+    casterLevel = 'casterLevel',
+    totalLevel = 'totalLevel',
 }
 
 export {
     DamageType,
     EnergyType,
     PhysicalDamageType,
+    /** @deprecated use DamageModifier instead */
     SpecialDamageModifier,
+    DamageModifier,
+    /** @deprecated use DamageRollMultiplier instead */
     SpecialDamageRollMultiplier,
+    DamageRollMultiplier,
     SpecialDamageType,
 };
