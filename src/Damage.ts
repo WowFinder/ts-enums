@@ -25,8 +25,8 @@ const DamageType = {
 type DamageType = PhysicalDamageType | EnergyType | SpecialDamageType;
 
 enum SpecialDamageModifier {
-    SpellPower = 'SpellPower',
-    Finesse = 'Finesse',
+    spellPower = 'spellPower',
+    finesse = 'finesse',
 }
 
 enum SpecialDamageRollMultiplier {
