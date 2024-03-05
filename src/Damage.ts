@@ -30,8 +30,8 @@ enum SpecialDamageModifier {
 }
 
 enum SpecialDamageRollMultiplier {
-    CasterLevel = 'CasterLevel',
-    TotalLevel = 'TotalLevel',
+    casterLevel = 'casterLevel',
+    totalLevel = 'totalLevel',
 }
 
 export {
