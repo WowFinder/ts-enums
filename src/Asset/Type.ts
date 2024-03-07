@@ -1,12 +1,12 @@
 enum AssetType {
-    Adventures = 'Adventures',
-    Characters = 'Characters',
-    Classes = 'Classes',
-    Factions = 'Factions',
-    Items = 'Items',
-    Races = 'Races',
-    SpellLists = 'SpellLists',
-    Spells = 'Spells',
+    adventures = 'adventures',
+    characters = 'characters',
+    classes = 'classes',
+    factions = 'factions',
+    items = 'items',
+    races = 'races',
+    spellLists = 'spellLists',
+    spells = 'spells',
 }
 
 export { AssetType };

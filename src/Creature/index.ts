@@ -5,4 +5,4 @@ export * from './Feat';
 export * from './Save';
 export * from './Size';
 export * from './Skill';
-export * from './StatKey';
+export * from './Stat';
