@@ -3,6 +3,7 @@ enum Languages {
     common = 'common',
 
     // General: available to at least one playable race
+    arakkoa = 'arakkoa',
     darnassian = 'darnassian', // Night elves
     draconic = 'draconic',
     draenei = 'draenei',
@@ -23,6 +24,10 @@ enum Languages {
     ursine = 'ursine', // Furbolg
     worgen = 'worgen',
     zandali = 'zandali',
+
+    // Rare: initially unavailable to players
+    gutterspeak = 'gutterspeak', // Forsaken
+    shathyar = 'shathyar', // void: Old gods / n'raqi / aqir
 }
 
 export { Languages };
