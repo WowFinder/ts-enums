@@ -3,7 +3,7 @@ import {
     AlignmentDescriptor,
     Size,
     Skill,
-    StatKey,
+    Stat,
     StatGroup,
     Aura,
     ClassTier,
@@ -25,7 +25,7 @@ describe('Creature-related enums', () => {
         testStringEnum(Skill);
     });
     it('StatKey should be a string-based enum', () => {
-        testStringEnum(StatKey);
+        testStringEnum(Stat);
     });
     it('StatGroup should be a string-based enum', () => {
         testStringEnum(StatGroup);

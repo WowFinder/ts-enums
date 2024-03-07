@@ -1,13 +1,13 @@
 enum Alignment {
-    LG = 'LG',
-    LN = 'LN',
-    LE = 'LE',
-    NG = 'NG',
-    NN = 'NN',
-    NE = 'NE',
-    CG = 'CG',
-    CN = 'CN',
-    CE = 'CE',
+    lawfulGood = 'lawfulGood',
+    lawfulNeutral = 'lawfulNeutral',
+    lawfulEvil = 'lawfulEvil',
+    neutralGood = 'neutralGood',
+    neutralNeutral = 'neutralNeutral',
+    neutralEvil = 'neutralEvil',
+    chaoticGood = 'chaoticGood',
+    chaoticNeutral = 'chaoticNeutral',
+    chaoticEvil = 'chaoticEvil',
 }
 
 enum AlignmentDescriptor {
