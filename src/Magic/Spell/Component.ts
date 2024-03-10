@@ -1,7 +1,7 @@
 enum SpellCoreComponent {
-    v = 'v',
-    s = 's',
-    m = 'm',
+    verbal = 'verbal',
+    somatic = 'somatic',
+    material = 'material',
 }
 
 export { SpellCoreComponent };

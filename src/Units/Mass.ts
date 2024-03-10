@@ -1,8 +1,8 @@
 enum MassUnit {
-    lb = 'lb',
-    g = 'g',
-    kg = 'kg',
-    oz = 'oz',
+    pound = 'pound',
+    gram = 'gram',
+    kilogram = 'kilogram',
+    ounce = 'ounce',
 }
 
 export { MassUnit };

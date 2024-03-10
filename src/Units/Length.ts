@@ -4,7 +4,7 @@ enum LengthUnit {
     square = 'square',
     meter = 'meter',
     inch = 'inch',
-    cm = 'cm',
+    centiMeter = 'centiMeter',
 }
 
 export { LengthUnit };
