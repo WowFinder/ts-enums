@@ -1,6 +1,6 @@
 enum Save {
-    fort = 'fort',
-    refl = 'refl',
+    fortitude = 'fortitude',
+    reflexes = 'reflexes',
     will = 'will',
 }
 

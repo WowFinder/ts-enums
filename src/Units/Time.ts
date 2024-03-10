@@ -1,10 +1,10 @@
 enum TimeUnit {
-    s = 's',
-    t = 't',
-    m = 'm',
-    h = 'h',
-    d = 'd',
-    y = 'y',
+    second = 'second',
+    turn = 'turn',
+    minute = 'minute',
+    hour = 'hour',
+    day = 'day',
+    year = 'year',
 }
 
 export { TimeUnit };

@@ -1,6 +1,6 @@
 enum GearSlot {
-    mhand = 'mhand',
-    ohand = 'ohand',
+    mainHand = 'mainHand',
+    offHand = 'offHand',
     head = 'head',
     torso = 'torso',
     back = 'back',

@@ -1,13 +1,13 @@
 enum School {
-    abj = 'abj',
-    con = 'con',
-    div = 'div',
-    enc = 'enc',
-    evo = 'evo',
-    ill = 'ill',
-    nec = 'nec',
-    tra = 'tra',
-    uni = 'uni',
+    abjuration = 'abjuration',
+    conjuration = 'conjuration',
+    divination = 'divination',
+    enchantment = 'enchantment',
+    evocation = 'evocation',
+    illusion = 'illusion',
+    necromancy = 'necromancy',
+    transmutation = 'transmutation',
+    universal = 'universal',
 }
 
 export { School };
