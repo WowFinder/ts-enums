@@ -1,4 +1,4 @@
-function testStringEnum(enumObject: any, keys?: string[]): void {
+function expectStringEnum(enumObject: any, keys?: string[]): void {
     const enumKeys = keys ?? Object.keys(enumObject);
     enumKeys.forEach(key => {
         expect(typeof enumObject[key]).toBe('string');
@@ -6,7 +6,7 @@ function testStringEnum(enumObject: any, keys?: string[]): void {
     });
 }
 
-function testNumericEnum(enumObject: any, keys?: string[]): void {
+function expectNumericEnum(enumObject: any, keys?: string[]): void {
     const enumKeys = keys ?? Object.keys(enumObject);
     enumKeys.forEach(key => {
         const keyAsNumber = parseInt(key);
@@ -18,4 +18,13 @@ function testNumericEnum(enumObject: any, keys?: string[]): void {
     });
 }
 
-export { testStringEnum, testNumericEnum };
+function expectContains(parent: any, ...children: any[]): void {
+    children.forEach(child => {
+        Object.keys(child).forEach(key => {
+            expect(parent[key]).toBeDefined();
+            expect(parent[key]).toEqual(child[key]);
+        });
+    });
+}
+
+export { expectStringEnum, expectNumericEnum, expectContains };

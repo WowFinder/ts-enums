@@ -11,48 +11,56 @@ import {
     WeaponGroup,
     WeaponProficiency,
     WeaponRank,
-} from 'Item';
-import { testStringEnum } from './helpers';
+} from '../Item';
+import { expectContains, expectStringEnum } from './helpers';
 
 describe('Item-related enums', () => {
     it('Rarity should be a string-based enum', () => {
-        testStringEnum(Rarity);
+        expectStringEnum(Rarity);
     });
     it('GearSlot should be a string-based enum', () => {
-        testStringEnum(GearSlot);
+        expectStringEnum(GearSlot);
     });
     describe('Armor-related enums', () => {
         it('ArmorBonusType should be a string-based enum', () => {
-            testStringEnum(ArmorBonusType);
+            expectStringEnum(ArmorBonusType);
         });
         it('ArmorFlags should be a string-based enum', () => {
-            testStringEnum(ArmorFlags);
+            expectStringEnum(ArmorFlags);
         });
         it('ArmorType should be a string-based enum', () => {
-            testStringEnum(ArmorType);
+            expectStringEnum(ArmorType);
         });
     });
     describe('Weapon-related enums', () => {
         it('SimpleWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(SimpleWeaponProficiency);
+            expectStringEnum(SimpleWeaponProficiency);
         });
         it('MartialWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(MartialWeaponProficiency);
+            expectStringEnum(MartialWeaponProficiency);
         });
         it('ExoticWeaponProficiency should be a string-based enum', () => {
-            testStringEnum(ExoticWeaponProficiency);
+            expectStringEnum(ExoticWeaponProficiency);
         });
-        it('WeaponProficiency should be a string-based enum', () => {
-            testStringEnum(WeaponProficiency);
+        it('WeaponProficiency should be a string-based enum-like object', () => {
+            expectStringEnum(WeaponProficiency);
+        });
+        it('WeaponProficiency should contain all proficiency values (simple, martial, exotic)', () => {
+            expectContains(
+                WeaponProficiency,
+                SimpleWeaponProficiency,
+                MartialWeaponProficiency,
+                ExoticWeaponProficiency,
+            );
         });
         it('WeaponFlags should be a string-based enum', () => {
-            testStringEnum(WeaponFlags);
+            expectStringEnum(WeaponFlags);
         });
         it('WeaponGroup should be a string-based enum', () => {
-            testStringEnum(WeaponGroup);
+            expectStringEnum(WeaponGroup);
         });
         it('WeaponRank should be a string-based enum', () => {
-            testStringEnum(WeaponRank);
+            expectStringEnum(WeaponRank);
         });
     });
 });
