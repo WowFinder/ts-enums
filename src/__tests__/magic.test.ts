@@ -5,6 +5,7 @@ import {
     SpellSaveEffect,
     StandardRange,
     SubSchool,
+    subSchoolParents,
 } from '../Magic';
 import { expectStringEnum } from './helpers';
 
@@ -26,5 +27,11 @@ describe('Magic-related enums', () => {
     });
     it('SpellSaveEffect should be a string-based enum', () => {
         expectStringEnum(SpellSaveEffect);
+    });
+    it('subSchoolParents should be an exhaustive mapping from SubSchool to School', () => {
+        for (const subSchool of Object.values(SubSchool)) {
+            expect(subSchoolParents[subSchool]).toBeDefined();
+            expect(School[subSchoolParents[subSchool]]).toBeDefined();
+        }
     });
 });
