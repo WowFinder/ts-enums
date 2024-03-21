@@ -1,14 +1,14 @@
 import { LengthUnit, MassUnit, TimeUnit } from '../Units';
-import { testStringEnum } from './helpers';
+import { expectStringEnum } from './helpers';
 
 describe('Unit-related enums', () => {
     it('LengthUnit should be a string-based enum', () => {
-        testStringEnum(LengthUnit);
+        expectStringEnum(LengthUnit);
     });
     it('MassUnit should be a string-based enum', () => {
-        testStringEnum(MassUnit);
+        expectStringEnum(MassUnit);
     });
     it('TimeUnit should be a string-based enum', () => {
-        testStringEnum(TimeUnit);
+        expectStringEnum(TimeUnit);
     });
 });

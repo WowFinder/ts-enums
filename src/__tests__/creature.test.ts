@@ -9,38 +9,39 @@ import {
     ClassTier,
     FeatFlag,
 } from '../Creature';
-import { testStringEnum, testNumericEnum } from './helpers';
+import { expectStringEnum, expectNumericEnum } from './helpers';
 
 describe('Creature-related enums', () => {
     it('Alignment should be a string-based enum', () => {
-        testStringEnum(Alignment);
+        expectStringEnum(Alignment);
     });
     it('AlignmentDescriptor should be a string-based enum', () => {
-        testStringEnum(AlignmentDescriptor);
+        expectStringEnum(AlignmentDescriptor);
     });
     it('Size should be a numeric enum', () => {
-        testNumericEnum(Size);
+        expectNumericEnum(Size);
     });
     it('Skill should be a string-based enum', () => {
-        testStringEnum(Skill);
+        expectStringEnum(Skill);
     });
     it('StatKey should be a string-based enum', () => {
-        testStringEnum(Stat);
+        expectStringEnum(Stat);
     });
     it('StatGroup should be a string-based enum', () => {
-        testStringEnum(StatGroup);
+        expectStringEnum(StatGroup);
     });
     describe('Class-related enums', () => {
         it('Aura should be a string-based enum', () => {
-            testStringEnum(Aura);
+            expectStringEnum(Aura);
         });
         it('ClassTier should be a string-based enum', () => {
-            testStringEnum(ClassTier);
+            expectStringEnum(ClassTier);
         });
+        // Class features covered in ClassFeature.test.ts
     });
     describe('Feat-related enums', () => {
         it('FeatFlag should be a string-based enum', () => {
-            testStringEnum(FeatFlag);
+            expectStringEnum(FeatFlag);
         });
     });
 });

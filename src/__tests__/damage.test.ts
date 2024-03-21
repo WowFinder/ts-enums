@@ -8,31 +8,33 @@ import {
     SpecialDamageRollMultiplier,
     DamageRollMultiplier,
 } from '../Damage';
-import { testStringEnum } from './helpers';
+import { expectContains, expectStringEnum } from './helpers';
 
 describe('Damage-related enums', () => {
     it('PhysicalDamageType should be a string-based enum', () => {
-        testStringEnum(PhysicalDamageType);
+        expectStringEnum(PhysicalDamageType);
     });
     it('EnergyType should be a string-based enum', () => {
-        testStringEnum(EnergyType);
+        expectStringEnum(EnergyType);
     });
     it('SpecialDamageType should be a string-based enum', () => {
-        testStringEnum(SpecialDamageType);
+        expectStringEnum(SpecialDamageType);
     });
     it('DamageType should be a string-based enum', () => {
-        testStringEnum(DamageType);
+        expectStringEnum(DamageType);
     });
     it('SpecialDamageModifier should be a string-based enum', () => {
-        testStringEnum(SpecialDamageModifier);
+        expectStringEnum(SpecialDamageModifier);
     });
     it('DamageModifier should be a string-based enum', () => {
-        testStringEnum(DamageModifier);
+        expectStringEnum(DamageModifier);
+        expectContains(DamageModifier, SpecialDamageModifier);
     });
     it('SpecialDamageRollMultiplier should be a string-based enum', () => {
-        testStringEnum(SpecialDamageRollMultiplier);
+        expectStringEnum(SpecialDamageRollMultiplier);
     });
     it('DamageRollMultiplier should be a string-based enum', () => {
-        testStringEnum(DamageRollMultiplier);
+        expectStringEnum(DamageRollMultiplier);
+        expectContains(DamageRollMultiplier, SpecialDamageRollMultiplier);
     });
 });
