@@ -14,4 +14,4 @@ enum ArmorType {
     heavy = 'heavy',
 }
 
-export { ArmorBonusType, ArmorFlags, ArmorType };
+export { /** @deprecated */ ArmorBonusType, ArmorFlags, ArmorType };
