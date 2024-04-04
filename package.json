@@ -1,7 +1,7 @@
 {
     "name": "@wowfinder/ts-enums",
-    "version": "0.0.7",
-    "description": "TS-based enumerations used accross the WowFinder apps and libraries",
+    "version": "0.0.8",
+    "description": "TS-based enumerations and enum-like types used accross the WowFinder apps and libraries",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": "https://github.com/WowFinder/ts-enums.git",
@@ -27,6 +27,9 @@
         "build": "npm-run-all -s build:pre build:tsc",
         "prepublishOnly": "yarn version apply && yarn run checks:pedantic && yarn build",
         "prepare": "build"
+    },
+    "dependencies": {
+        "@wowfinder/ts-utils": "^0.1.0"
     },
     "devDependencies": {
         "@tsconfig/recommended": "^1.0.5",
