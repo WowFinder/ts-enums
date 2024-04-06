@@ -1,6 +1,6 @@
 {
     "name": "@wowfinder/ts-enums",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "TS-based enumerations used accross the WowFinder apps and libraries",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -17,11 +17,13 @@
         "format:check": "prettier --check \"src/**/*.{js,ts,json,json5}\"",
         "test": "jest",
         "test:coverage": "jest --coverage",
+        "skott:web": "skott -nit --displayMode=webapp --trackThirdPartyDependencies --trackBuiltinDependencies src/",
+        "skott:circular": "skott -nit --showCircularDependencies --displayMode=raw",
         "checks:quick": "npm-run-all -pc lint tsc",
         "checks:fix": "npm-run-all -sc lint:fix format tsc",
         "checks:standard": "npm-run-all -sc lint format:check tsc test",
         "checks:full": "npm-run-all -sc lint:fix format test:coverage build",
-        "checks:pedantic": "npm-run-all -sc lint format:check test:coverage build",
+        "checks:pedantic": "npm-run-all -sc lint format:check test:coverage build skott:circular",
         "build:pre": "rimraf dist",
         "build:tsc": "tsc",
         "build": "npm-run-all -s build:pre build:tsc",
@@ -29,7 +31,7 @@
         "prepare": "build"
     },
     "devDependencies": {
-        "@tsconfig/recommended": "^1.0.5",
+        "@tsconfig/recommended": "^1.0.6",
         "@types/jest": "^29.5.12",
         "@typescript-eslint/eslint-plugin": "^7.5.0",
         "@typescript-eslint/parser": "^7.5.0",
@@ -47,6 +49,7 @@
         "prettier": "^3.2.5",
         "rimraf": "^5.0.5",
         "rxjs": "^7.8.1",
+        "skott": "^0.33.2",
         "ts-jest": "^29.1.2",
         "tsd": "^0.31.0",
         "typescript": "^5.4.4"
