@@ -4,6 +4,7 @@ enum TimeUnit {
     minute = 'minute',
     hour = 'hour',
     day = 'day',
+    week = 'week',
     year = 'year',
 }
 

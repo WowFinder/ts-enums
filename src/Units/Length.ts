@@ -5,6 +5,8 @@ enum LengthUnit {
     meter = 'meter',
     inch = 'inch',
     centiMeter = 'centiMeter',
+    kiloMeter = 'kiloMeter',
+    mile = 'mile',
 }
 
 export { LengthUnit };
