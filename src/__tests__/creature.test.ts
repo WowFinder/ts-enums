@@ -1,6 +1,7 @@
 import {
     Alignment,
     AlignmentDescriptor,
+    BreathingMedium,
     Size,
     Skill,
     Stat,
@@ -17,6 +18,9 @@ describe('Creature-related enums', () => {
     });
     it('AlignmentDescriptor should be a string-based enum', () => {
         expectStringEnum(AlignmentDescriptor);
+    });
+    it('BreathingMedium should be a string-based enum', () => {
+        expectStringEnum(BreathingMedium);
     });
     it('Size should be a numeric enum', () => {
         expectNumericEnum(Size);
