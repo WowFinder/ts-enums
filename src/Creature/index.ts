@@ -1,5 +1,6 @@
 export * from './Alignment';
 export * from './BonusType';
+export * from './BreathingMedium';
 export * from './Class';
 export * from './Feat';
 export * from './ResistanceCategory';
