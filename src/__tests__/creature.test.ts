@@ -9,6 +9,8 @@ import {
     Aura,
     ClassTier,
     FeatFlag,
+    CreatureSubType,
+    CreatureType,
 } from '../Creature';
 import { expectStringEnum, expectNumericEnum } from './helpers';
 
@@ -46,6 +48,14 @@ describe('Creature-related enums', () => {
     describe('Feat-related enums', () => {
         it('FeatFlag should be a string-based enum', () => {
             expectStringEnum(FeatFlag);
+        });
+    });
+    describe('Creature type and subtype enums', () => {
+        it('CreatureSubType should be a string-based enum', () => {
+            expectStringEnum(CreatureSubType);
+        });
+        it('CreatureType should be a string-based enum', () => {
+            expectStringEnum(CreatureType);
         });
     });
 });
