@@ -8,3 +8,5 @@ export * from './Save';
 export * from './Size';
 export * from './Skill';
 export * from './Stat';
+export * from './SubType';
+export * from './Type';
