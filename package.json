@@ -1,10 +1,14 @@
 {
     "name": "@wowfinder/ts-enums",
+    "type": "commonjs",
     "version": "0.0.16",
     "description": "TS-based enumerations used accross the WowFinder apps and libraries",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/WowFinder/ts-enums.git",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/WowFinder/ts-enums.git"
+    },
     "author": "Edurne Pascual <herenvardo@gmail.com>",
     "license": "GPL-3.0-or-later",
     "scripts": {
