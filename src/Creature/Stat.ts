@@ -22,4 +22,13 @@ enum StatGroup {
     mental = 'mental',
 }
 
-export { PhysicalStat, MentalStat, Stat, StatGroup };
+const statsOrder: (keyof typeof Stat)[] = [
+    'strength',
+    'dexterity',
+    'constitution',
+    'intelligence',
+    'wisdom',
+    'charisma',
+];
+
+export { PhysicalStat, MentalStat, Stat, StatGroup, statsOrder };
