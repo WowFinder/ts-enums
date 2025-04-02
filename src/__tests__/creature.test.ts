@@ -11,6 +11,7 @@ import {
     FeatFlag,
     CreatureSubType,
     CreatureType,
+    statsOrder,
 } from '../Creature';
 import { expectStringEnum, expectNumericEnum } from './helpers';
 
@@ -35,6 +36,12 @@ describe('Creature-related enums', () => {
     });
     it('StatGroup should be a string-based enum', () => {
         expectStringEnum(StatGroup);
+    });
+    it('All keys of Stat should be in the statsOrder array', () => {
+        const statKeys = Object.keys(Stat) as (keyof typeof Stat)[];
+        for (const statKey of statKeys) {
+            expect(statsOrder).toContain(statKey);
+        }
     });
     describe('Class-related enums', () => {
         it('Aura should be a string-based enum', () => {
