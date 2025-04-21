@@ -1,0 +1,40 @@
+name: Build and Publish
+
+on:
+  push:
+    tags:
+      - 'v*' # Triggers the workflow when a tag starting with "v" (e.g., v1.0.0) is pushed
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        run: yarn
+      - name: Lint validation
+        run: yarn lint
+      - name: Check and apply pending verions
+        run: yarn version apply
+      - name: Extract tag name
+        run: echo "TAG_VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+      - name: Module compilation and build
+        run: yarn build
+
+      # Publish your module to npmjs.org
+      - name: (DEBUG) Print tag version
+        run: echo "TAG_VERSION=${{env.TAG_VERSION}}"
+      # - name: Publish to npmjs
+      #   run: cd dist && yarn && echo "yarn npm publish --access public"
+      #   env:
+      #     # Ensure that you have saved your npm authentication token under the name "NPM_TOKEN" in your repository secrets
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
