@@ -32,6 +32,7 @@ jobs:
 
       # Publish your module to npmjs.org
       - name: Publish to npmjs
-        run: cd dist && yarn && echo "yarn npm publish --access public"
+        run: cd dist && yarn && yarn npm publish --access public
         env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
