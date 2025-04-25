@@ -20,7 +20,9 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
       
       - name: Setup token authentication for npmjs
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+          yarn config set npmAuthToken "${{ secrets.NPM_TOKEN }}"
 
       - name: Install dependencies
         run: yarn
@@ -41,7 +43,10 @@ jobs:
 
       # Publish your module to npmjs.org
       - name: Publish to npmjs
-        run: cd dist && yarn && yarn npm publish --access public
+        run: |
+          cd dist
+          yarn
+          yarn npm publish --access public
         env:
           YARN_ENABLE_IMMUTABLE_INSTALLS: false
           NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
