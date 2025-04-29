@@ -24,7 +24,7 @@ module.exports = {
     coverageDirectory: 'coverage',
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: ['/node_modules/', '__tests__'],
+    coveragePathIgnorePatterns: ['/node_modules/', '__tests__', '.setup.ts'],
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
@@ -183,3 +183,7 @@ module.exports = {
     // Whether to use watchman for file crawling
     // watchman: true,
 };
+
+
+
+
