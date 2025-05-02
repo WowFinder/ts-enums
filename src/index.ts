@@ -7,4 +7,4 @@ export * from './Languages';
 export * from './Magic';
 export * from './Reputation';
 export * from './Units';
-export * from './__tests__/helpers';
+export * from './testingHelpers';

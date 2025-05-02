@@ -12,7 +12,7 @@ import {
     WeaponProficiency,
     WeaponRank,
 } from '../Item';
-import { expectContains, expectStringEnum } from './helpers';
+import { expectContains, expectStringEnum } from '../testingHelpers';
 
 describe('Item-related enums', () => {
     it('Rarity should be a string-based enum', () => {

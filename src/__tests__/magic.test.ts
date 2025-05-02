@@ -7,7 +7,7 @@ import {
     SubSchool,
     subSchoolParents,
 } from '../Magic';
-import { expectStringEnum } from './helpers';
+import { expectStringEnum } from '../testingHelpers';
 
 describe('Magic-related enums', () => {
     it('School should be a string-based enum', () => {

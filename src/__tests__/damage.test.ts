@@ -8,7 +8,7 @@ import {
     SpecialDamageRollMultiplier,
     DamageRollMultiplier,
 } from '../Damage';
-import { expectContains, expectStringEnum } from './helpers';
+import { expectContains, expectStringEnum } from '../testingHelpers';
 
 describe('Damage-related enums', () => {
     it('PhysicalDamageType should be a string-based enum', () => {

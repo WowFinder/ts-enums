@@ -13,7 +13,7 @@ import {
     CreatureType,
     statsOrder,
 } from '../Creature';
-import { expectStringEnum, expectNumericEnum } from './helpers';
+import { expectStringEnum, expectNumericEnum } from '../testingHelpers';
 
 describe('Creature-related enums', () => {
     it('Alignment should be a string-based enum', () => {
