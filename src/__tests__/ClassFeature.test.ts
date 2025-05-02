@@ -1,5 +1,5 @@
 import * as ClassFeatures from '../Creature/Class/Feature';
-import { expectContains, expectStringEnum } from './helpers';
+import { expectContains, expectStringEnum } from '../testingHelpers';
 
 describe('Class-specific feature collections', () => {
     it('BarbarianClassFeature should be a string-based enum', () => {

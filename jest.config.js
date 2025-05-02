@@ -24,7 +24,7 @@ module.exports = {
     coverageDirectory: 'coverage',
 
     // An array of regexp pattern strings used to skip coverage collection
-    coveragePathIgnorePatterns: ['/node_modules/', '__tests__', '.setup.ts'],
+    coveragePathIgnorePatterns: ['/node_modules/', '__tests__', '.setup.ts', 'testingHelpers.ts'],
 
     // Indicates which provider should be used to instrument code for coverage
     // coverageProvider: "babel",
