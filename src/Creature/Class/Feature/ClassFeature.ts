@@ -22,6 +22,8 @@ const ClassFeature = {
     ...SharedClassFeature,
 } as const;
 
+Object.freeze(ClassFeature);
+
 type ClassFeature = keyof typeof ClassFeature;
 
 export { ClassFeature };

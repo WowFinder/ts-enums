@@ -18,6 +18,11 @@ function expectNumericEnum(enumObject: any, keys?: string[]): void {
     });
 }
 
+function expectEnumCount(enumObject: any, count: number): void {
+    expect(Object.keys(enumObject)).toHaveLength(count);
+    expect(Object.values(enumObject)).toHaveLength(count);
+}
+
 function expectContains(parent: any, ...children: any[]): void {
     children.forEach(child => {
         Object.keys(child).forEach(key => {
@@ -27,4 +32,4 @@ function expectContains(parent: any, ...children: any[]): void {
     });
 }
 
-export { expectStringEnum, expectNumericEnum, expectContains };
+export { expectStringEnum, expectNumericEnum, expectEnumCount, expectContains };
