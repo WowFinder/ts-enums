@@ -9,4 +9,5 @@ export * from './Size';
 export * from './Skill';
 export * from './Stat';
 export * from './SubType';
+export * from './Trait';
 export * from './Type';
