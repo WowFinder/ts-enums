@@ -1,6 +1,6 @@
 enum BaseTrait {
     ancientFoeDemons = 'ancientFoeDemons',
-    arcaneAccuity = 'arcaneAccuity',
+    arcaneAcuity = 'arcaneAcuity',
     arcaneAffinity = 'arcaneAffinity',
     darkvision60 = 'darkvision60',
     defensiveTrainingDemons = 'defensiveTrainingDemons',
