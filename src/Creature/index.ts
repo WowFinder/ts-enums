@@ -3,6 +3,7 @@ export * from './BonusType';
 export * from './BreathingMedium';
 export * from './Class';
 export * from './Feat';
+export * from './Feature';
 export * from './ResistanceCategory';
 export * from './Save';
 export * from './Size';
