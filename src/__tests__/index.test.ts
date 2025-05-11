@@ -1,4 +1,4 @@
-import { Languages, Reputation } from '../index';
+import { Languages, Reputation, Feature } from '../index';
 import { expectStringEnum } from '../testingHelpers';
 
 describe('Global enums', () => {
@@ -7,5 +7,8 @@ describe('Global enums', () => {
     });
     it('Reputation should be a string-based enum', () => {
         expectStringEnum(Reputation);
+    });
+    it('Feature should be a string-based enum', () => {
+        expectStringEnum(Feature);
     });
 });
