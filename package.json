@@ -1,7 +1,7 @@
 {
     "name": "@wowfinder/ts-enums",
     "type": "commonjs",
-    "version": "0.0.30",
+    "version": "0.0.31",
     "description": "TS-based enumerations used accross the WowFinder apps and libraries",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
