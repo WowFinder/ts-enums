@@ -5,9 +5,9 @@ type NonHumanoidCreatureType = Exclude<CreatureType, CreatureType.humanoid>;
 type MixedType = Capitalize<NonHumanoidCreatureType | CreatureSubType>;
 
 const mixedTypeKeysCapitalized = [
-    ...Object.keys(CreatureType).filter((type) => type !== 'humanoid'),
+    ...Object.keys(CreatureType).filter(type => type !== 'humanoid'),
     ...Object.keys(CreatureSubType),
-].map((type) => type.charAt(0).toUpperCase() + type.slice(1));
+].map(type => type.charAt(0).toUpperCase() + type.slice(1));
 
 type AncientFoeKey = `ancientFoe${MixedType}`;
 type DefensiveTrainingKey = `defensiveTraining${MixedType}`;
@@ -20,7 +20,8 @@ const CreatureTypeTrait = {
         (acc, type) => {
             const ancientFoeKey = `ancientFoe${type}` as AncientFoeKey;
             acc[ancientFoeKey] = ancientFoeKey;
-            const defensiveTrainingKey = `defensiveTraining${type}` as DefensiveTrainingKey;
+            const defensiveTrainingKey =
+                `defensiveTraining${type}` as DefensiveTrainingKey;
             acc[defensiveTrainingKey] = defensiveTrainingKey;
             const hatredKey = `hatred${type}` as HatredKey;
             acc[hatredKey] = hatredKey;
@@ -35,10 +36,3 @@ Object.freeze(CreatureTypeTrait);
 type CreatureTypeTrait = keyof typeof CreatureTypeTrait;
 
 export { CreatureTypeTrait };
-
-
-
-
-
-
-
