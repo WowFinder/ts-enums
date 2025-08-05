@@ -6,10 +6,7 @@ import path from 'path';
 // It will not be included in the npm package.
 
 function writeBufferSync(filePath: string[], raw: string): void {
-    fs.writeFileSync(
-        path.resolve(__dirname, ...filePath),
-        Buffer.from(raw, 'utf-8'),
-    );
+    fs.writeFileSync(path.resolve(__dirname, ...filePath), raw, 'utf-8');
 }
 
 function copyFromParentSync(baseName: string): void {
