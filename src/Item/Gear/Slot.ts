@@ -15,6 +15,6 @@ enum GearSlot {
     ring = 'ring', // Each
 }
 
-type Shape = { slot: GearSlot; qtty: number }[];
+type Shape = { slot: GearSlot; quantity: number }[];
 
-export { GearSlot, Shape };
+export { GearSlot, type Shape };
